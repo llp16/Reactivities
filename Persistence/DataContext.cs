@@ -10,5 +10,10 @@ namespace Persistence
         }
 
         public DbSet<Activity> Activities { get; set; }
+
+        public Task FindAsync(Guid id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
