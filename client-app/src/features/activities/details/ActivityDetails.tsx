@@ -1,14 +1,14 @@
-import React from "react";
-import { Button, Card, Icon, Image } from "semantic-ui-react";
-import { Activity } from "../../../app/models/activity";
+import { Button, Card, Image } from "semantic-ui-react";
+import LoadingComponent from "../../../app/layout/LoadingComponent";
+import { useStore } from "../../../app/stores/store";
 
-interface Props {
-    activity: Activity;
-    cancleSelectActivity: () => void;
-    openForm: (id: string) => void;
-}
+export default function ActivityDetials() {
 
-export default function ActivityDetials({ activity, cancleSelectActivity, openForm }: Props) {
+    const {activityStore} = useStore();
+    const {selectedActivity: activity, openForm, cancleSelectActivity} = activityStore;
+
+    if (!activity) return <LoadingComponent/>;
+
     return (
         <Card fluid>
             <Image src={`/assets/categoryImages/${activity.category}.jpg`}/>
