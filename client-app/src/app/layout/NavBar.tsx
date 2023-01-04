@@ -9,9 +9,11 @@ export default function NavBar() {
                     <img src="/assets/arctradeLogo.png" alt="logo" style={{marginRight: '10px'}}/>
                     <img src="/assets/arctradeLogo_name.png" alt="logoName" style={{marginRight: '10px', width: 100}}/>
                 </Menu.Item>
-                <Menu.Item as={NavLink} to='/activities' name="Activities"/>
+                <Menu.Item as={NavLink} to='/activities' name="Opportunities"/>
+                <Menu.Item as={NavLink} to='/applicants' name="Applicants"/>
+
                 <Menu.Item>
-                    <Button as={NavLink} to='/createActivity' positive content='Create Activity'/>
+                    <Button as={NavLink} to='/createActivity' positive content='Post Opening'/>
                 </Menu.Item>
             </Container>
 

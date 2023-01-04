@@ -12,7 +12,7 @@ export default function ActivityFilters() {
                 <Menu.Item content="I'm hosting"/>
             </Menu>
             <Header />
-            <Calendar/>
+            {/* <Calendar/> */}
         </>
     )
 }

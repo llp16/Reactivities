@@ -64,7 +64,7 @@ export default observer(function ActivityForm() {
 
     return (
         <Segment clearing>
-            <Header content='Activity Details' sub color='teal' />
+            <Header content='Job Details' sub color='teal' />
             <Formik
                 validationSchema={validationSchema}
                 enableReinitialize

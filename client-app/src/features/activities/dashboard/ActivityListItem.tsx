@@ -20,7 +20,7 @@ export default function ActivityListItem({ activity }: Props) {
                             <Item.Header as={Link} to={`/activities/${activity.id}`}>
                                 {activity.title}
                             </Item.Header>
-                            <Item.Description>Hosted by Lanpeng</Item.Description>
+                            <Item.Description>Posted by Lanpeng</Item.Description>
                         </Item.Content>
                     </Item>
                 </Item.Group>
@@ -41,7 +41,7 @@ export default function ActivityListItem({ activity }: Props) {
                     to={`/activities/${activity.id}`}
                     color='teal'
                     floated='right'
-                    content='View'
+                    content='View Details'
                 />
             </Segment>
         </Segment.Group>
